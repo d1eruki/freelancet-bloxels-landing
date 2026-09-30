@@ -1,699 +1,1285 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
-<title>Блоксели Лендинг</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="stylesheet" href="assets/styles/design-system.css">
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1440">
+  <title>Блоксели Лендинг</title>
+  <script>
+    window.tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            Geologica: ['Geologica', 'Arial', 'sans-serif'],
+            Jost: ['Jost', 'Geologica', 'Arial', 'sans-serif'],
+            Inter: ['Inter', 'Geologica', 'Arial', 'sans-serif'],
+            'SF Pro Text': ['Geologica', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles/tailwind-bridge.css">
 </head>
 <body>
-
-<div data-screen-label="Блоксели — Лендинг" class="page-shell">
-
-  <!-- ░░ HEADER ░░ -->
-  <header id="site-header" class="site-header">
-    <div class="site-header__inner">
-      <nav class="site-nav">
-        <a href="#" class="site-nav__link">Школам</a>
-        <a href="#" class="site-nav__link">Родителям</a>
-        <a href="#" class="site-nav__link">Детям</a>
-        <a href="#" class="site-nav__link">Новости</a>
-        <a href="#" class="site-nav__link">Вакансии</a>
-      </nav>
-      <div class="brand-mark">
-        <span class="brand-mark__icon"></span>
-        <span class="brand-mark__name">Блоксели</span>
-      </div>
-      <div class="site-header__actions">
-        <button class="button button--primary button--header">Открыть платформу →</button>
+<div class="landing-export w-[1440px] pb-20 relative bg-radial-[at_70%_10%] from-sky-400/30 to-sky-400/0 to 69% inline-flex flex-col justify-start items-center overflow-hidden">
+  <div data-mode="Desktop" data-theme="Light" class="w-[1440px] h-24 px-14 left-0 top-0 absolute z-30 inline-flex justify-between items-center">
+    <div class="w-72 flex justify-start items-center gap-4">
+      <div class="justify-start text-white text-base font-normal font-['Jost']">Школам</div>
+      <div class="justify-start text-white text-base font-normal font-['Jost']">Родителям</div>
+      <div class="justify-start text-white text-base font-normal font-['Jost']">Детям</div>
+      <div class="justify-start text-white text-base font-normal font-['Jost']">Новости</div>
+      <div class="justify-start text-white text-base font-normal font-['Jost']">Вакансии</div>
+    </div>
+    <div data-color="Black" data-style="With label" class="w-36 h-9 relative">
+      <div class="w-36 h-9 left-0 top-0 absolute bg-white"></div>
+    </div>
+    <div class="w-72 inline-flex flex-col justify-center items-end gap-2.5">
+      <div data-content="Label" data-fill="Fill" data-variant="Primary" class="size- min-w-52 px-9 py-3.5 bg-linear-81 from-pink-400 to-violet-500 rounded-xl shadow-[0px_0px_4px_-8px_rgba(255,255,255,0.25)] shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.15)] inline-flex justify-center items-center gap-2.5">
+        <div class="text-center justify-start text-stone-50 text-sm font-medium font-['Geologica']">Открыть платформу →</div>
       </div>
     </div>
-  </header>
-
-  <!-- ░░ HERO ░░ -->
-  <section class="hero">
-    <img src="assets/images/hero-bg.png" alt="Блоксели — образовательный 3D-мир" class="hero__image">
-    <div class="hero__content">
-      <h1 class="hero__title"><span>Образовательный</span><span>конструктор 3D-игр</span></h1>
-      <p class="hero__subtitle">Готовая платформа для учителей, любимая игра для учеников.<br>В одном браузерном окне.</p>
-      <button class="button button--primary hero__cta">Связаться с нами</button>
+  </div>
+  <div class="self-stretch h-[860px] pt-40 relative flex flex-col justify-start items-center">
+    <div class="w-[1440px] h-[1288px] left-0 top-[-130px] absolute">
+      <img class="w-[2404px] h-[1069px] left-[-484px] top-0 absolute" src="assets/images/hero-bg.png" />
+      <img class="w-[1440px] h-[1354px] left-0 top-0 absolute" src="assets/images/hero-bg.png" />
     </div>
-    <div class="hero__scroll-wrap">
-      <button data-scroll-down class="scroll-pill">
-        <span class="scroll-pill__label">нырнуть</span>
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8966D7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="scroll-pill__icon"><path d="M12 5v13 M6 12l6 6 6-6"></path></svg>
-      </button>
-    </div>
-  </section>
-
-  <!-- ░░ 01 — GOALS ░░ -->
-  <section class="section section--goals">
-    <div class="section-kicker">
-      <span class="section-kicker__number">01</span>
-      <span class="section-kicker__label">Выбери путь</span>
-    </div>
-    <h2 class="section-title section-title--spaced">Выбери <span class="text-gradient">свою цель</span></h2>
-    <div class="goal-grid">
-      <div class="goal-card glass-card">
-        <div class="goal-card__copy">
-          <div class="card-title">Школам и педагогам</div>
-          <div class="goal-card__text">Хочу запустить IT-кружок в школе</div>
-        </div>
-        <span class="card-link">Перейти →</span>
-        <img src="assets/images/bloxels-image-06-854x853.png" alt="" class="goal-card__image goal-card__image--schools">
-      </div>
-      <div class="goal-card glass-card">
-        <div class="goal-card__copy">
-          <div class="card-title">Родителям</div>
-          <div class="goal-card__text">Хочу, чтобы ребёнок освоил цифровые навыки</div>
-        </div>
-        <span class="card-link">Перейти →</span>
-        <img src="assets/images/bloxels-image-03-230x532.png" alt="" class="goal-card__image goal-card__image--parents">
-      </div>
-      <div class="goal-card glass-card">
-        <div class="goal-card__copy">
-          <div class="card-title">Детям</div>
-          <div class="goal-card__text">Хочу создавать свои игры</div>
-        </div>
-        <span class="card-link">Перейти →</span>
-        <img src="assets/images/bloxels-image-01-158x374.png" alt="" class="goal-card__image goal-card__image--kids">
+    <div class="size- p-2.5 relative z-10 flex flex-col justify-center items-center gap-6">
+      <div class="text-center justify-start text-white text-7xl font-black font-['Geologica'] uppercase leading-[90px]">Образовательный<br/>конструктор 3D-игр</div>
+      <div class="text-center justify-start text-white text-xl font-semibold font-['Geologica']">Готовая платформа для учителей, любимая игра для учеников.        В одном браузерном окне.</div>
+      <div data-content="Label" data-fill="Fill" data-variant="Primary" class="size- min-w-52 px-9 py-3.5 bg-linear-81 from-pink-400 to-violet-500 rounded-xl shadow-[0px_0px_4px_-8px_rgba(255,255,255,0.25)] shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.15)] inline-flex justify-center items-center gap-2.5">
+        <div class="text-center justify-start text-stone-50 text-sm font-medium font-['Geologica']">Связаться с нами</div>
       </div>
     </div>
-  </section>
-
-  <!-- ░░ 02 — ABOUT ░░ -->
-  <section class="section section--about split-section">
-    <div class="about-copy">
-      <div class="glass-card glass-card--large about-summary">
-        <div class="section-kicker">
-          <span class="section-kicker__number">02</span>
-          <span class="section-kicker__label">О платформе</span>
+    <div class="size-32 left-[657px] top-[960px] absolute">
+      <div class="size-32 left-0 top-0 absolute">
+        <div class="w-32 h-52 left-0 top-0 absolute bg-white/50 rounded-[62px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px]"></div>
+        <div class="w-32 p-2.5 left-0 top-[118px] absolute inline-flex flex-col justify-center items-center">
+          <div class="text-center justify-start text-white text-xl font-semibold font-['Geologica']">нырнуть</div>
+          <div data-property-1="arrow down" class="size-9 relative overflow-hidden">
+            <div class="size-9 left-0 top-0 absolute overflow-hidden">
+              <div class="w-4 h-3 left-[9px] top-[12px] absolute bg-white"></div>
+            </div>
+          </div>
         </div>
-        <h2 class="section-title section-title--about">Что такое <span class="text-gradient">Блоксели?</span></h2>
-        <p class="body-copy">Блоксели — образовательный конструктор 3D игр, где дети создают свои интерактивные проекты и осваивают основы <span class="text-gradient">программирования, логики и&nbsp;геймдизайна</span>.</p>
+        <img class="size-16 left-[30px] top-[33px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
       </div>
-      
-        <div class="feature-row glass-card">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8966D7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14l11-7z"></path></svg>
-          <span class="feature-row__title">Вовлечение через практику</span>
-        </div>
-        <div class="feature-row glass-card">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8966D7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2 M3 14a2 2 0 0 1 2-2h1v6H5a2 2 0 0 1-2-2z M21 14a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2z M19 18v1a3 3 0 0 1-3 3h-2"></path></svg>
-          <span class="feature-row__title">Готовый УМК и поддержка</span>
-        </div>
-        <div class="feature-row glass-card">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8966D7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 2 3.4-.2.9 3.3 2.7 2.1-1.4 3.2 1.4 3.2-2.7 2.1-.9 3.3-3.4-.2L12 22l-2.5-2-3.4.2-.9-3.3L2.5 14l1.4-3.2L2.5 7.6 5.2 5.5 6.1 2.2 9.5 2.4z M8.5 12l2.5 2.5 4.5-5"></path></svg>
-          <span class="feature-row__title">Реестр Минцифры</span>
-        </div>
     </div>
-
-    <div class="browser-card">
-      <div class="browser-card__toolbar">
-        <span class="window-dot window-dot--red"></span>
-        <span class="window-dot window-dot--yellow"></span>
-        <span class="window-dot window-dot--green"></span>
-        <div class="browser-card__tab">
-          <span class="browser-card__favicon"></span>
-          <span class="browser-card__tab-title">БЛОКСЕЛИ ОБЗОР</span>
+  </div>
+  <div class="self-stretch pt-64 flex flex-col justify-start items-center">
+    <div class="w-full max-w-[1440px] px-14 py-20 relative flex flex-col justify-center items-center gap-14">
+      <div class="self-stretch flex flex-col justify-start items-start gap-3">
+        <div class="size- inline-flex justify-start items-center gap-3">
+          <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+            <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">01</div>
+          </div>
+          <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Выбери путь</div>
+        </div>
+        <div class="justify-start"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Выбери </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">свою цель</span></div>
+      </div>
+      <div class="size-52 left-[1424.18px] top-[218.73px] absolute origin-top-left rotate-[118deg] bg-gradient-to-br from-fuchsia-600/50 to-violet-600/40 rounded-xl shadow-[0px_0px_40px_0px_rgba(201,61,214,0.50)]"></div>
+      <div class="self-stretch h-64 inline-flex justify-start items-start gap-5">
+        <div class="flex-1 self-stretch pl-12 pr-6 py-9 bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex justify-start items-center gap-5">
+          <div class="flex-1 self-stretch inline-flex flex-col justify-between items-start">
+            <div class="self-stretch flex flex-col justify-start items-start gap-3">
+              <div class="justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Школам и педагогам</div>
+              <div class="self-stretch justify-start text-slate-400 text-base font-normal font-['Geologica']">Хочу запустить IT-кружок в школе</div>
+            </div>
+            <div class="self-stretch justify-start text-pink-400 text-sm font-bold font-['Inter'] uppercase leading-5 tracking-wider">Перейти →</div>
+          </div>
+          <div class="flex-1 h-80 relative">
+            <div class="w-32 h-7 left-[205.62px] top-[316.43px] absolute origin-top-left rotate-[167deg] bg-linear-228 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="w-56 h-48 left-[175.55px] top-[340px] absolute origin-top-left rotate-180" src="assets/images/bloxels-image-06-854x853.png" />
+          </div>
+        </div>
+        <div class="flex-1 self-stretch pl-12 pr-6 py-9 bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex justify-start items-center gap-5">
+          <div class="flex-1 self-stretch inline-flex flex-col justify-between items-start">
+            <div class="self-stretch flex flex-col justify-start items-start gap-3">
+              <div class="self-stretch justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Родителям</div>
+              <div class="self-stretch justify-start text-slate-400 text-base font-normal font-['Geologica']">Хочу, чтобы ребенок освоил цифровые навыки</div>
+            </div>
+            <div class="self-stretch justify-start text-violet-500 text-sm font-bold font-['Inter'] uppercase leading-5 tracking-wider">Перейти →</div>
+          </div>
+          <div class="flex-1 h-80 relative">
+            <div class="w-32 h-7 left-[205.95px] top-[312.43px] absolute origin-top-left rotate-[167deg] bg-linear-228 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="w-52 h-48 left-[167px] top-[340px] absolute origin-top-left rotate-180" src="assets/images/bloxels-image-03-230x532.png" />
+          </div>
+        </div>
+        <div class="flex-1 self-stretch pl-12 pr-6 py-9 bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex justify-start items-center gap-5">
+          <div class="flex-1 self-stretch inline-flex flex-col justify-between items-start">
+            <div class="self-stretch flex flex-col justify-start items-start gap-3">
+              <div class="self-stretch justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Детям</div>
+              <div class="self-stretch justify-start text-slate-400 text-base font-normal font-['Geologica']">Хочу создавать<br/>свои игры</div>
+            </div>
+            <div class="self-stretch justify-start text-emerald-500 text-sm font-bold font-['Inter'] uppercase leading-5 tracking-wider">Перейти →</div>
+          </div>
+          <div class="flex-1 h-80 relative">
+            <div class="w-32 h-7 left-[221.28px] top-[300.43px] absolute origin-top-left rotate-[167deg] bg-linear-228 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="w-44 h-48 left-[167.33px] top-[340px] absolute origin-top-left rotate-180" src="assets/images/bloxels-image-01-158x374.png" />
+          </div>
         </div>
       </div>
-      <div class="browser-card__address-row">
-        <div class="browser-card__address">🔒 https://bloxels.ru</div>
-      </div>
-      <img src="assets/images/bloxels-image-09-1920x1080.png" alt="Редактор Блоксели" class="browser-card__image">
     </div>
-  </section>
-
-  <!-- ░░ STATS ░░ -->
-  <section id="stats" class="stats-grid">
-    
-      <div class="stat-card">
-        <div class="stat-card__halo"></div>
-        <div data-stat-target="60" class="stat-card__value">60+</div>
-        <div class="stat-card__caption">школ используют Блоксели</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-card__halo"></div>
-        <div data-stat-target="26500" class="stat-card__value">26 500+</div>
-        <div class="stat-card__caption">учеников стали авторами игр</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-card__halo"></div>
-        <div data-stat-target="87000" class="stat-card__value">87 000+</div>
-        <div class="stat-card__caption">игр создано на платформе</div>
-      </div>
-  </section>
-
-  <!-- ░░ 03 — HOW IT WORKS / FAQ ░░ -->
-  <section class="section section--faq faq-layout">
-    <div>
-      <div class="section-kicker">
-        <span class="section-kicker__number">03</span>
-        <span class="section-kicker__label">FAQ по платформе</span>
-      </div>
-      <h2 class="section-title">Как это <span class="text-gradient">работает?</span></h2>
-      <img src="assets/images/bloxels-image-08-764x846.png" alt="" class="faq-illustration">
-    </div>
-    <div class="faq-list">
-      
-        <div data-faq class="faq-item glass-card">
-          <div class="faq-item__header">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h10a1 1 0 0 1 1 1v14a1.5 1.5 0 0 0-1.5-1.5H6z M6 4.5A1.5 1.5 0 0 0 4.5 6v13.5A1.5 1.5 0 0 1 6 18"></path></svg>
-            <span class="faq-item__title">«Книга Правил»</span>
-            <span data-faq-plus class="faq-item__plus is-open">+</span>
-          </div>
-          <div data-faq-panel class="faq-item__panel is-open">
-            <p class="faq-item__text">Российский язык визуального программирования. Алгоритмика без кода.</p>
-          </div>
-        </div>
-        <div data-faq class="faq-item glass-card">
-          <div class="faq-item__header">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z M12 3v18 M4 7.5l8 4.5 8-4.5"></path></svg>
-            <span class="faq-item__title">3D-моделирование из кубиков</span>
-            <span data-faq-plus class="faq-item__plus">+</span>
-          </div>
-          <div data-faq-panel class="faq-item__panel">
-            <p class="faq-item__text">Редактор воксельных объектов. Пространственное мышление.</p>
-          </div>
-        </div>
-        <div data-faq class="faq-item glass-card">
-          <div class="faq-item__header">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4z M13 4h7v7h-7z M4 13h7v7H4z M13 13h7v7h-7z"></path></svg>
-            <span class="faq-item__title">Онлайн-каталог проектов</span>
-            <span data-faq-plus class="faq-item__plus">+</span>
-          </div>
-          <div data-faq-panel class="faq-item__panel">
-            <p class="faq-item__text">Социальная среда, обратная связь от друзей.</p>
-          </div>
-        </div>
-        <div data-faq class="faq-item glass-card">
-          <div class="faq-item__header">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M3 20a6 6 0 0 1 12 0 M16 5.5a3 3 0 0 1 0 6 M16.5 14.5a6 6 0 0 1 4.5 5.5"></path></svg>
-            <span class="faq-item__title">Мультиплеер и коллаборация</span>
-            <span data-faq-plus class="faq-item__plus">+</span>
-          </div>
-          <div data-faq-panel class="faq-item__panel">
-            <p class="faq-item__text">Совместное создание проектов в реальном времени.</p>
-          </div>
-        </div>
-        <div data-faq class="faq-item glass-card">
-          <div class="faq-item__header">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 8l-4.5 4 4.5 4 M15 8l4.5 4-4.5 4"></path></svg>
-            <span class="faq-item__title">Программирование на Python</span>
-            <span data-faq-plus class="faq-item__plus">+</span>
-          </div>
-          <div data-faq-panel class="faq-item__panel">
-            <p class="faq-item__text">Воплощение идей с помощью кода.</p>
-          </div>
-        </div>
-    </div>
-  </section>
-  <p class="device-note">В браузере или в приложении, на любом устройстве</p>
-
-  <!-- ░░ 04 — PROJECTS ░░ -->
-  <section class="section section--projects projects-section">
-    <div class="project-fan">
-      
-        <div class="project-fan__slot project-fan__slot--1">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">GaMir·GaMblox</span>
+    <div class="w-full max-w-[1440px] min-h-[860px] px-14 py-20 flex flex-col justify-center items-center gap-5">
+      <div class="self-stretch inline-flex justify-start items-start gap-5">
+        <div class="flex-1 inline-flex flex-col justify-center items-start gap-2.5">
+          <div class="w-96 p-9 bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex flex-col justify-start items-start gap-9">
+            <div class="self-stretch flex flex-col justify-start items-start gap-3">
+              <div class="self-stretch inline-flex justify-start items-center gap-3">
+                <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+                  <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">02</div>
+                </div>
+                <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">О платформе</div>
               </div>
-              <div class="project-card__title">Парк для общения</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>5.4K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>134</span>
+              <div class="self-stretch justify-start"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Что такое </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">Блоксели?</span></div>
+            </div>
+            <div class="self-stretch justify-start"><span class="text-slate-900/80 text-base font-normal font-['Geologica']">Блоксели — образовательный конструктор 3D игр, где дети создают свои интерактивные проекты и осваивают основы </span><span class="text-pink-400 text-base font-normal font-['Geologica']">программирования, логики и геймдизайна</span><span class="text-slate-900/80 text-base font-normal font-['Geologica']">.</span></div>
+          </div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-2.5">
+            <div class="self-stretch px-6 py-4 bg-white/50 rounded-[32px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-center gap-5">
+              <div data-variant="Practice" class="size-6 relative overflow-hidden">
+                <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                  <div class="w-5 h-4 left-[1px] top-[3px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                </div>
+              </div>
+              <div class="flex-1 flex justify-start items-start gap-4">
+                <div class="flex-1 justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Вовлечение через практику</div>
+              </div>
+            </div>
+            <div class="self-stretch px-6 py-4 bg-white/50 rounded-[32px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-center gap-5">
+              <div data-variant="Support" class="size-6 relative overflow-hidden">
+                <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                  <div class="w-5 h-4 left-[2px] top-[3px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                </div>
+              </div>
+              <div class="flex-1 flex justify-start items-start gap-4">
+                <div class="flex-1 justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Готовый УМК и поддержка</div>
+              </div>
+            </div>
+            <div class="self-stretch px-6 py-4 bg-white/50 rounded-[32px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-center gap-5">
+              <div data-variant="Reestr" class="size-6 relative overflow-hidden">
+                <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                  <div class="size-5 left-[1px] top-[1.50px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                </div>
+              </div>
+              <div class="flex-1 flex justify-start items-start gap-4">
+                <div class="flex-1 justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Реестр Минцифры</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="project-fan__slot project-fan__slot--2">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">GGlazStudio</span>
-              </div>
-              <div class="project-card__title">Дерево улучшений</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>3.7K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>103</span>
-              </div>
+        <div class="w-[873px] bg-white rounded-3xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="self-stretch h-20 relative">
+            <div class="w-[873px] h-10 left-[-0.51px] top-[-0.25px] absolute bg-slate-400/50 shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px]"></div>
+            <div class="w-12 h-3 left-[17px] top-[16px] absolute">
+              <div class="size-3 left-0 top-0 absolute bg-red-400 shadow-[inset_0px_0px_6px_0px_rgba(236,109,98,1.00)] border-[0.50px] border-red-500"></div>
+              <div class="size-3 left-[20px] top-0 absolute bg-amber-300 shadow-[inset_0px_0px_6px_0px_rgba(245,196,81,1.00)] border-[0.50px] border-orange-400"></div>
+              <div class="size-3 left-[40px] top-0 absolute bg-green-400 shadow-[inset_0px_0px_6px_0px_rgba(104,204,88,1.00)] border-[0.50px] border-lime-600"></div>
             </div>
-          </div>
-        </div>
-        <div class="project-fan__slot project-fan__slot--3">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">SpeedDev</span>
+            <div class="size- left-[74px] top-[8px] absolute inline-flex justify-start items-center gap-2">
+              <div class="w-64 flex justify-start items-start gap-2.5">
+                <div class="w-44 h-5 bg-gradient-to-l from-black/0 to-black to 10%"></div>
+                <div class="justify-center text-zinc-700 text-xs font-normal font-['SF_Pro_Text']">БЛОКСЕЛИ ОБЗОР</div>
+                <div class="size-2 bg-white"></div>
+                <div data-color="Default" data-style="Icon" class="size-4 relative">
+                  <div class="size-4 left-0 top-0 absolute bg-white"></div>
+                </div>
               </div>
-              <div class="project-card__title">Гонки 3D</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>8.1K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>256</span>
-              </div>
+              <div class="size-3 bg-stone-300"></div>
             </div>
+            <div class="w-[873px] h-9 left-0 top-[42px] absolute bg-white"></div>
+            <div class="w-[873px] h-[0.50px] left-0 top-[78.50px] absolute bg-zinc-400"></div>
+            <div class="size-3 left-[15.50px] top-[53.59px] absolute bg-zinc-600"></div>
+            <div class="size-3 left-[60.50px] top-[65.88px] absolute origin-top-left rotate-180 bg-stone-300"></div>
+            <div class="w-3.5 h-3 left-[79.50px] top-[53.50px] absolute bg-zinc-600"></div>
+            <div class="w-[721px] h-7 left-[108px] top-[46px] absolute bg-gray-100 rounded-2xl"></div>
+            <div class="w-2 h-2.5 left-[122px] top-[55px] absolute bg-zinc-600"></div>
+            <div class="w-[621px] h-7 left-[142px] top-[46px] absolute justify-center"><span class="text-neutral-500 text-sm font-normal font-['Inter']">https://</span><span class="text-neutral-800 text-sm font-normal font-['Inter']">bloxels.ru</span></div>
+            <div class="w-[3px] h-3 left-[849.50px] top-[53.60px] absolute bg-zinc-600"></div>
+            <div class="w-16 h-12 left-[74px] top-[2px] absolute"></div>
           </div>
-        </div>
-        <div class="project-fan__slot project-fan__slot--4">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">VoxelKing</span>
-              </div>
-              <div class="project-card__title">Кубический мир</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>12K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>489</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-fan__slot project-fan__slot--5">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">PixelMaze</span>
-              </div>
-              <div class="project-card__title">Лабиринт теней</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>2.3K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>77</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-fan__slot project-fan__slot--6">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">StarBuild</span>
-              </div>
-              <div class="project-card__title">Космобаза</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>6.6K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>198</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-fan__slot project-fan__slot--7">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">FarmCraft</span>
-              </div>
-              <div class="project-card__title">Ферма мечты</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>4.9K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>142</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-fan__slot project-fan__slot--8">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">GGlazStudio</span>
-              </div>
-              <div class="project-card__title">Вырасти сад 0.2</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>23.6K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>362</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-fan__slot project-fan__slot--9">
-          <div class="project-card">
-            <img src="assets/images/bloxels-image-02-512x512.png" alt="" class="project-card__image">
-            <div class="project-card__body">
-              <div class="project-card__author-row">
-                <span class="project-card__avatar"></span>
-                <span class="project-card__author">VIAN</span>
-              </div>
-              <div class="project-card__title">Grow a Farm</div>
-              <div class="project-card__meta">
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>12.7K</span>
-                <span class="project-card__meta-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"></path></svg>244</span>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="section-heading section-heading--center">
-      <div class="section-kicker section-kicker--center">
-        <span class="section-kicker__number">04</span>
-        <span class="section-kicker__label">Проекты</span>
-      </div>
-      <h2 class="section-title">Проекты <span class="text-gradient">наших<br>учеников</span></h2>
-    </div>
-  </section>
-
-  <!-- ░░ 05 — PROFESSIONS ░░ -->
-  <section class="section section--professions">
-    <div class="professions-header">
-      <div>
-        <div class="section-kicker">
-          <span class="section-kicker__number">05</span>
-          <span class="section-kicker__label">Профессии будущего</span>
-        </div>
-        <h2 class="section-title section-title--professions">
-          <span>Блоксели — <span class="text-gradient">первый шаг</span></span>
-          <span>к профессиям будущего</span>
-        </h2>
-      </div>
-      <img src="assets/images/bloxels-image-05-906x695.png" alt="" class="professions-header__image">
-    </div>
-    <div class="profession-grid">
-      
-        <div class="profession-card profession-card--1 glass-card">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 8l-4.5 4 4.5 4 M15 8l4.5 4-4.5 4"></path></svg>
-          <span class="eyebrow-label">01 — Программирование</span>
-          <span class="card-title">IT и разработка</span>
-          <span class="card-description">Программист, AI-разработчик, разработчик приложений</span>
-        </div>
-        <div class="profession-card profession-card--2 glass-card">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.6-1 1.2-1.9-.4-.9.2-1.6 1.1-1.6H17a4 4 0 0 0 4-4c0-5-4-7.5-9-7.5z M7.5 11.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z M12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2z M16.5 10.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg>
-          <span class="eyebrow-label">02 — Творчество</span>
-          <span class="card-title">Цифровой дизайн</span>
-          <span class="card-description">3D-дизайнер, UX/UI-дизайнер, дизайнер виртуальных миров</span>
-        </div>
-        <div class="profession-card profession-card--3 glass-card">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h6 M5 6v9a3 3 0 0 0 3 3h3 M14 4.5h5.5v5H14z M11 14.5h5.5v5H11z"></path></svg>
-          <span class="eyebrow-label">03 — Логика</span>
-          <span class="card-title">Инженерия и архитектура</span>
-          <span class="card-description">Архитектор, инженер-проектировщик, специалист VR/AR</span>
-        </div>
-        <div class="profession-card profession-card--4 glass-card">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5 M10.5 3v6l-5.2 8.5A1.2 1.2 0 0 0 6.3 19.5h11.4a1.2 1.2 0 0 0 1-1.9L13.5 9V3 M7.5 15h9"></path></svg>
-          <span class="eyebrow-label">04 — Наука</span>
-          <span class="card-title">Наука и исследования</span>
-          <span class="card-description">Медицинская визуализация, биоинформатика, цифровые модели</span>
-        </div>
-        <div class="profession-card profession-card--5 glass-card">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FF4BC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10H4.5a2 2 0 0 0-2 2.3l1 5.5a2 2 0 0 0 3.5 1L8 16.5h8l1 2.3a2 2 0 0 0 3.5-1l1-5.5a2 2 0 0 0-2-2.3H8z M6.5 12.5v3 M5 14h3 M16 12.5h.01 M18 14.5h.01"></path></svg>
-          <span class="eyebrow-label">05 — Игры</span>
-          <span class="card-title">Разработка игр</span>
-          <span class="card-description">Геймдизайнер, разработчик игр, левел-дизайнер</span>
-        </div>
-    </div>
-  </section>
-
-  <!-- ░░ 06 — TALENTS ░░ -->
-  <section class="section section--talents talents-layout">
-    <div>
-      <div class="section-kicker">
-        <span class="section-kicker__number">06</span>
-        <span class="section-kicker__label">Учим</span>
-      </div>
-      <h2 class="section-title section-title--talents">Блоксели<br>раскрывает <span class="text-gradient">таланты</span></h2>
-    </div>
-    <div class="talent-grid">
-      
-        <div class="talent-card glass-card">
-          <div class="talent-card__title">Открывает мир разработки игр</div>
-          <div class="talent-card__text">Дети придумывают механики, строят уровни и программируют персонажей — всё как у настоящих разработчиков.</div>
-        </div>
-        <div class="talent-card glass-card">
-          <div class="talent-card__title">Учит программировать</div>
-          <div class="talent-card__text">От визуальных блоков до Python — шаг за шагом, без стресса и скуки.</div>
-        </div>
-        <div class="talent-card glass-card">
-          <div class="talent-card__title">Проводит хакатоны и конкурсы</div>
-          <div class="talent-card__text">Дети работают в командах, презентуют идеи и выигрывают призы.</div>
-        </div>
-        <div class="talent-card glass-card">
-          <div class="talent-card__title">Превращает хобби в профессию</div>
-          <div class="talent-card__text">«Программирование, геймдев, 3D-дизайн — профессии будущего, путь к которым начинается с игры.»</div>
-        </div>
-    </div>
-  </section>
-
-  <!-- ░░ 07 — PARTNERS ░░ -->
-  <section class="section section--partners partners-section">
-    <img src="assets/images/bloxels-image-04-1024x943.png" alt="" class="partners-section__image">
-    <div class="section-kicker section-kicker--center">
-      <span class="section-kicker__number">07</span>
-      <span class="section-kicker__label">Мы сотрудничаем</span>
-    </div>
-    <h2 class="section-title section-title--spaced">Наши <span class="text-gradient">партнеры</span></h2>
-    <div class="partner-grid">
-      
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">ГЕРОФАРМ</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">geckotouch</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">POLYMEDIA</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">СИНЕРГИЯ</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">UNITY-LAB</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">softline</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">ROBBO</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">UCHi.RU</span>
-        </div>
-        <div class="partner-card glass-card">
-          <span class="partner-card__name">VAYWIN</span>
-        </div>
-    </div>
-  </section>
-
-  <!-- ░░ 08 — MAP ░░ -->
-  <section class="section section--standard">
-    <div class="section-kicker">
-      <span class="section-kicker__number">08</span>
-      <span class="section-kicker__label">Опыт</span>
-    </div>
-    <h2 class="section-title section-title--map">Внедрено в <span class="text-gradient">50+ госшкол</span></h2>
-    <div class="map-layout">
-      <img src="assets/images/bloxels-image-07-618x988.png" alt="" class="map-layout__character">
-      <div class="map-window browser-card">
-        <div class="browser-card__toolbar browser-card__toolbar--compact">
-          <span class="window-dot window-dot--red"></span>
-          <span class="window-dot window-dot--yellow"></span>
-          <span class="window-dot window-dot--green"></span>
-          <div class="browser-card__tab browser-card__tab--compact">
-            <span class="browser-card__tab-title browser-card__tab-title--wide">РАСШИРЕНИЕ БЛОКСЕЛЕЙ</span>
-          </div>
-        </div>
-        <div class="browser-card__address-row">
-          <div class="browser-card__address">🔒 https://bloxels.ru/expand</div>
-        </div>
-        <div class="map-canvas">
-          <span class="map-pin map-pin--moscow"></span>
-          <span class="map-pin map-pin--north"></span>
-          <span class="map-pin map-pin--center"></span>
-          <span class="map-pin map-pin--east"></span>
-          <span class="map-pin map-pin--far-east"></span>
-          <span class="map-pin map-pin--south"></span>
-          <div class="map-caption">Карта России с флажками школ</div>
+          <img class="self-stretch h-[491px]" src="assets/images/bloxels-image-09-1920x1080.png" />
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ░░ 09 — NEWS ░░ -->
-  <section class="section section--news">
-    <div class="section-kicker">
-      <span class="section-kicker__number">09</span>
-      <span class="section-kicker__label">Мы пишем</span>
-    </div>
-    <h2 class="section-title section-title--news">Новости</h2>
-    <div class="news-grid">
-      <div class="news-feature glass-card">
-        <div class="news-feature__media">
-          <img src="assets/images/bloxels-image-11-1024x1280.png" alt="" class="news-feature__image">
-          <span class="news-feature__badge">ГЛАВНОЕ</span>
+    <div class="w-full max-w-[1440px] px-14 py-20 inline-flex justify-center items-center gap-5">
+      <div class="flex-1 flex justify-start items-center gap-5">
+        <div class="flex-1 relative inline-flex flex-col justify-center items-center gap-3">
+          <div class="size-96 left-0 top-[-148px] absolute bg-white/50 rounded-full blur-3xl"></div>
+          <div class="justify-center text-pink-400 text-7xl font-black font-['Geologica'] uppercase leading-[90px]">60+</div>
+          <div class="self-stretch text-center justify-start text-black text-xl font-semibold font-['Geologica']">школ используют Блоксели</div>
         </div>
-        <div class="news-feature__body">
-          <span class="news-date">14.05.2026</span>
-          <h3 class="news-feature__title">Премия «Блоксели 2026»: как прошёл первый конкурс на платформе</h3>
-          <span class="read-more read-more--feature">Читать →</span>
+        <div class="flex-1 relative inline-flex flex-col justify-center items-center gap-3">
+          <div class="size-96 left-[0.33px] top-[-148px] absolute bg-white/50 rounded-full blur-3xl"></div>
+          <div class="justify-center text-pink-400 text-7xl font-black font-['Geologica'] uppercase leading-[90px]">26 500+</div>
+          <div class="self-stretch text-center justify-start text-black text-xl font-semibold font-['Geologica']">учеников стали авторами игр</div>
         </div>
-      </div>
-      <div class="news-list">
-        
-          <div class="news-card glass-card">
-            <div class="news-card__media">
-              <img src="assets/images/bloxels-image-13-1680x1083.png" alt="" class="news-card__image">
-            </div>
-            <div class="news-card__body">
-              <span class="news-card__meta">СОБЫТИЯ · 07.05.2026</span>
-              <span class="news-card__title">Блоксели стали партнёрами Олимпиады «Невский интеграл»</span>
-              <span class="read-more read-more--small">Читать →</span>
-            </div>
-          </div>
-          <div class="news-card glass-card">
-            <div class="news-card__media">
-              <img src="assets/images/bloxels-image-13-1680x1083.png" alt="" class="news-card__image">
-            </div>
-            <div class="news-card__body">
-              <span class="news-card__meta">МНЕНИЕ · 28.04.2026</span>
-              <span class="news-card__title">«Блоксели» в профессиональном диалоге о будущем инженерного образования</span>
-              <span class="read-more read-more--small">Читать →</span>
-            </div>
-          </div>
-          <div class="news-card glass-card">
-            <div class="news-card__media">
-              <img src="assets/images/bloxels-image-13-1680x1083.png" alt="" class="news-card__image">
-            </div>
-            <div class="news-card__body">
-              <span class="news-card__meta">ОБЩЕСТВО · 15.04.2026</span>
-              <span class="news-card__title">«Блоксели» пригласили в Общественную палату: почему государство обсуждает игровые технологии с разработчиками?</span>
-              <span class="read-more read-more--small">Читать →</span>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ SUBSCRIBE CTA ░░ -->
-  <section class="section section--subscribe">
-    <div class="subscribe-panel glass-card">
-      <h2 class="section-title subscribe-panel__title">Будьте в курсе<br><span class="text-gradient">обновлений</span></h2>
-      <p class="subscribe-panel__text">Узнавайте первыми о конкурсах, кейсах и новостях платформы!</p>
-      
-        <div data-subscribe-done class="form-success subscribe-success">✓ Готово! Проверьте почту</div>
-        <div data-subscribe-form class="subscribe-form">
-          <input data-subscribe-email aria-label="Email для подписки" placeholder="email@example.com" class="form-input subscribe-form__input">
-          <button data-subscribe-submit class="button button--primary subscribe-form__button">ПОДПИСАТЬСЯ →</button>
-        </div>
-      <img src="assets/images/bloxels-image-10-1672x941.png" alt="" class="subscribe-panel__image">
-    </div>
-  </section>
-
-  <!-- ░░ 10 — CONTACT ░░ -->
-  <section class="section section--contact contact-section">
-    <div class="contact-intro glass-card">
-      <div class="section-kicker">
-        <span class="section-kicker__number">10</span>
-        <span class="section-kicker__label">Заявка</span>
-      </div>
-      <div>
-        <h2 class="section-title contact-intro__title">Появились <span class="text-gradient">вопросы?</span><br>Мы с вами <span class="text-gradient">свяжемся!</span></h2>
-        <p class="contact-intro__text">Заполните форму, и наш менеджер свяжется с вами в ближайшее время.</p>
-      </div>
-    </div>
-
-    <div class="contact-form-card glass-card">
-      
-        <div data-contact-done class="form-success contact-success">
-          <div class="form-success__icon">✓</div>
-          <div class="form-success__title">Заявка отправлена!</div>
-          <div class="form-success__text">Менеджер свяжется с вами в ближайшее время.</div>
-        </div>
-        <div data-contact-form>
-          <h3 class="contact-form__title">Заполните форму, и наш менеджер свяжется с вами в ближайшее время.</h3>
-          <div class="contact-form__grid">
-            <input data-contact-name aria-label="ФИО" placeholder="ФИО *" class="form-input">
-            <input aria-label="Email" placeholder="Email *" class="form-input">
-            <input data-contact-phone aria-label="Номер телефона" placeholder="Номер телефона *" class="form-input">
-            <input aria-label="Образовательное учреждение" placeholder="Образовательное учреждение *" class="form-input">
-          </div>
-          <div class="role-select">
-            <button data-role-toggle class="role-select__button">
-              <span data-role-label>Выберите роль *</span>
-              <svg data-role-chevron width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#977ABD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="role-select__chevron"><path d="M6 9l6 6 6-6"></path></svg>
-            </button>
-            <div data-role-menu class="role-select__menu">
-              <div data-role-option="Школа / педагог" class="role-select__option">Школа / педагог</div>
-              <div data-role-option="Родитель" class="role-select__option">Родитель</div>
-              <div data-role-option="Ученик" class="role-select__option">Ученик</div>
-              <div data-role-option="Партнёр" class="role-select__option">Партнёр</div>
-            </div>
-          </div>
-          <div class="contact-form__footer">
-            <button data-contact-submit class="button button--primary contact-form__submit">Отправить заявку →</button>
-            <span data-contact-note class="contact-form__note">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных.</span>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- ░░ FOOTER ░░ -->
-  <footer class="site-footer">
-    <div class="site-footer__grid">
-      <div class="site-footer__brand-panel">
-        <div class="site-footer__brand">
-          <span class="site-footer__brand-icon"></span>
-          <span class="site-footer__brand-name">Блоксели</span>
-        </div>
-        <span class="site-footer__copyright">© Блоксели, 2026<br>Все права защищены.</span>
-      </div>
-      <div class="site-footer__links-panel glass-card">
-        <div class="site-footer__columns">
-          <div>
-            <div class="site-footer__column-title">Навигация</div>
-            <div class="site-footer__link-list">
-              <a href="#" class="site-footer__link">Школам</a>
-              <a href="#" class="site-footer__link">Родителям</a>
-              <a href="#" class="site-footer__link">Детям</a>
-            </div>
-          </div>
-          <div>
-            <div class="site-footer__column-title">Компания</div>
-            <div class="site-footer__link-list">
-              <a href="#" class="site-footer__link">Новости</a>
-              <a href="#" class="site-footer__link">Вакансии</a>
-              <a href="#" class="site-footer__link">Контакты</a>
-            </div>
-          </div>
-          <div class="site-footer__social-column">
-            <div class="site-footer__column-title">Следите за нами</div>
-            <div class="site-footer__social-list">
-              <a href="#" class="site-footer__social-link">Вконтакте
-                <svg width="20" height="13" viewBox="0 0 20 12.48" fill="#1A1530"><path d="M 10.893 12.48 C 4.06 12.48 0.162 7.795 0 0 L 3.423 0 C 3.535 5.721 6.059 8.145 8.057 8.645 L 8.057 0 L 11.281 0 L 11.281 4.934 C 13.254 4.722 15.328 2.473 16.027 0 L 19.25 0 C 18.713 3.048 16.465 5.297 14.866 6.221 C 16.465 6.971 19.026 8.932 20 12.48 L 16.452 12.48 C 15.69 10.106 13.791 8.27 11.281 8.02 L 11.281 12.48 L 10.893 12.48 Z"></path></svg>
-              </a>
-              <a href="#" class="site-footer__social-link">Телеграм
-                <svg width="20" height="17" viewBox="0 0 20 16.77" fill="#1A1530"><path d="M 0.931 6.922 L 18.668 0.084 C 19.491 -0.214 20.21 0.285 19.943 1.529 L 16.925 15.756 C 16.701 16.764 16.102 17.009 15.263 16.534 L 10.664 13.145 L 8.446 15.282 C 8.201 15.527 7.994 15.734 7.519 15.734 L 7.845 11.054 L 16.369 3.354 C 16.739 3.027 16.286 2.843 15.797 3.168 L 5.263 9.8 L 0.723 8.383 C -0.263 8.071 -0.284 7.398 0.931 6.922 Z"></path></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="site-footer__legal">
-          <a href="#" class="site-footer__legal-link">Политика конфиденциальности</a>
-          <a href="#" class="site-footer__legal-link">Оферта</a>
-          <a href="#" class="site-footer__legal-link">Информация о ПО</a>
-          <a href="#" class="site-footer__legal-link">Согласие на обработку персональных данных</a>
-          <a href="#" class="site-footer__legal-link">Лицензионное соглашение</a>
+        <div class="flex-1 relative inline-flex flex-col justify-center items-center gap-3">
+          <div class="size-96 left-[-0.33px] top-[-148px] absolute bg-white/50 rounded-full blur-3xl"></div>
+          <div class="justify-center text-pink-400 text-7xl font-black font-['Geologica'] uppercase leading-[90px]">87 000+</div>
+          <div class="self-stretch text-center justify-start text-black text-xl font-semibold font-['Geologica']">игр создано на платформе</div>
         </div>
       </div>
     </div>
-    <div class="site-footer__watermark">БЛОКСЕЛИ</div>
-  </footer>
-
+    <div class="w-full max-w-[1440px] min-h-[860px] px-14 py-20 relative flex flex-col justify-center items-start gap-14">
+      <div class="w-44 h-40 left-[1440.35px] top-[170.33px] absolute origin-top-left rotate-180">
+        <div class="size-24 left-[43.02px] top-[85.41px] absolute origin-top-left rotate-[-38deg] bg-gradient-to-br from-pink-400 to-fuchsia-600 rounded-2xl shadow-[0px_0px_40px_0px_rgba(255,122,184,0.55)]"></div>
+        <div class="size-24 left-[30.78px] top-0 absolute origin-top-left rotate-[20deg] opacity-60 bg-gradient-to-br from-pink-400 to-fuchsia-600 rounded-2xl shadow-[0px_0px_40px_0px_rgba(255,122,184,0.55)]"></div>
+      </div>
+      <div class="self-stretch inline-flex justify-center items-start gap-5">
+        <div class="self-stretch border-b border-white/50 inline-flex flex-col justify-start items-end gap-12">
+          <div class="self-stretch flex flex-col justify-start items-start gap-5">
+            <div class="self-stretch inline-flex justify-start items-center gap-3">
+              <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+                <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">03</div>
+              </div>
+              <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">FAQ по платформе</div>
+            </div>
+            <div class="justify-start"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Как это </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">работает?</span></div>
+          </div>
+          <div class="w-80 flex-1 relative inline-flex justify-start items-center gap-2.5">
+            <div class="w-32 h-14 left-[396.40px] top-[352.02px] absolute origin-top-left rotate-[167deg] bg-linear-211 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="size-96" src="assets/images/bloxels-image-08-764x846.png" />
+          </div>
+        </div>
+        <div class="flex-1 inline-flex flex-col justify-start items-start gap-12">
+          <div class="self-stretch flex flex-col justify-start items-start gap-5">
+            <div class="self-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex flex-col justify-center items-start gap-5 overflow-hidden">
+              <div class="self-stretch inline-flex justify-center items-center gap-3">
+                <div data-variant="Book" class="size-9 relative overflow-hidden">
+                  <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-6 h-7 left-[6px] top-[3px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                  </div>
+                </div>
+                <div class="flex-1 justify-start text-black text-xl font-semibold font-['Geologica']">«Книга Правил»</div>
+                <div data-iteration="2" data-state="Open" class="size-10 relative bg-linear-81 from-pink-400 to-violet-500 rounded-full overflow-hidden">
+                  <div data-variant="Plus" class="w-8 h-4 left-[3.03px] top-[25.36px] absolute origin-top-left -rotate-45 overflow-hidden">
+                    <div class="size-8 left-0 top-0 absolute overflow-hidden">
+                      <div class="size-5 left-[7.07px] top-[7.07px] absolute bg-white"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="self-stretch justify-start text-slate-400 text-base font-normal font-['Geologica']">Российский язык визуального программирования. Алгоритмика без кода.</div>
+            </div>
+            <div class="self-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex flex-col justify-center items-start gap-5 overflow-hidden">
+              <div class="self-stretch inline-flex justify-center items-center gap-3">
+                <div data-variant="3d" class="size-9 relative overflow-hidden">
+                  <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-7 left-[4.50px] top-[3px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                  </div>
+                </div>
+                <div class="flex-1 justify-start text-black text-xl font-semibold font-['Geologica']">3D-моделирование из кубиков</div>
+                <div data-iteration="2" data-state="Closed" class="size-10 relative bg-violet-300 rounded-full overflow-hidden">
+                  <div data-variant="Plus" class="size-6 left-[8px] top-[7.71px] absolute overflow-hidden">
+                    <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                      <div class="size-3.5 left-[5px] top-[5px] absolute bg-white"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="self-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex flex-col justify-center items-start gap-5 overflow-hidden">
+              <div class="self-stretch inline-flex justify-center items-center gap-3">
+                <div data-variant="Catalog" class="size-9 relative overflow-hidden">
+                  <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-7 left-[4.50px] top-[4.50px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                  </div>
+                </div>
+                <div class="flex-1 justify-start text-black text-xl font-semibold font-['Geologica']">Онлайн-каталог проектов</div>
+                <div data-iteration="2" data-state="Closed" class="size-10 relative bg-violet-300 rounded-full overflow-hidden">
+                  <div data-variant="Plus" class="size-6 left-[8px] top-[7.71px] absolute overflow-hidden">
+                    <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                      <div class="size-3.5 left-[5px] top-[5px] absolute bg-white"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="self-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex flex-col justify-center items-start gap-5 overflow-hidden">
+              <div class="self-stretch inline-flex justify-center items-center gap-3">
+                <div data-variant="PMP" class="size-9 relative overflow-hidden">
+                  <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-9 h-4 left-0 top-[9px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                  </div>
+                </div>
+                <div class="flex-1 justify-start text-black text-xl font-semibold font-['Geologica']">Мультиплеер и коллаборация</div>
+                <div data-iteration="2" data-state="Closed" class="size-10 relative bg-violet-300 rounded-full overflow-hidden">
+                  <div data-variant="Plus" class="size-6 left-[8px] top-[7.71px] absolute overflow-hidden">
+                    <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                      <div class="size-3.5 left-[5px] top-[5px] absolute bg-white"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="self-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex flex-col justify-center items-start gap-5 overflow-hidden">
+              <div class="self-stretch inline-flex justify-center items-center gap-3">
+                <div data-variant="Code" class="size-9 relative overflow-hidden">
+                  <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-8 h-6 left-[2.10px] top-[5.93px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+                  </div>
+                </div>
+                <div class="flex-1 justify-start text-black text-xl font-semibold font-['Geologica']">Программирование на Python</div>
+                <div data-iteration="2" data-state="Closed" class="size-10 relative bg-violet-300 rounded-full overflow-hidden">
+                  <div data-variant="Plus" class="size-6 left-[8px] top-[7.71px] absolute overflow-hidden">
+                    <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                      <div class="size-3.5 left-[5px] top-[5px] absolute bg-white"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="self-stretch text-center justify-center text-slate-400 text-4xl font-bold font-['Geologica'] leading-10">В браузере или в приложении, на любом устройстве</div>
+    </div>
+    <div class="w-full max-w-[1440px] min-h-[860px] px-14 py-20 relative flex flex-col justify-center items-center">
+      <div class="size-[2810px] left-[-685px] top-0 absolute bg-radial from-white/0 from 98% to-white/50 rounded-full shadow-[1.3690621852874756px_1.3690621852874756px_20.535932540893555px_0px_rgba(151,122,189,0.25)] backdrop-blur-[54.63px]"></div>
+      <div class="w-[2029px] h-96 relative">
+        <div class="size- left-[69.71px] top-[367.91px] absolute origin-top-left rotate-[-40.38deg] bg-white/50 rounded-[19.68px] shadow-[0.655961275100708px_0.655961275100708px_9.8394193649292px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <img class="size-72" src="assets/images/bloxels-image-02-512x512.png" />
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-7 relative">
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-7 left-[-0.13px] top-[0.11px] absolute bg-green-500"></div>
+                <img class="size-7 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">GGlazStudio</div>
+            </div>
+            <div class="self-stretch h-36 justify-start text-black text-lg font-medium font-['Geologica']">Дерево улучшений BETA  </div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-7 relative overflow-hidden">
+                  <div class="size-7 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-5 left-[2.75px] top-[3.03px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">3.7K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-7 relative overflow-hidden">
+                  <div class="size-7 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-6 left-[2.66px] top-[2.72px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">103</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[262.31px] top-[230.39px] absolute origin-top-left rotate-[-30.49deg] bg-white/50 rounded-2xl shadow-[0.5884910225868225px_0.5884910225868225px_8.827364921569824px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="size-60 bg-slate-400/50"></div>
+          <div class="self-stretch px-2.5 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-6 relative">
+                <img class="size-6 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-6 left-[-0.10px] top-[0.06px] absolute bg-red-600"></div>
+                <img class="size-6 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-6 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-xs font-medium font-['Geologica'] line-clamp-1">GaMir/GaMblox  </div>
+            </div>
+            <div class="self-stretch h-28 justify-start text-black text-base font-medium font-['Geologica']">Парк для общения  </div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[2.94px]">
+                <div data-variant="Show" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-4 left-[2.13px] top-[2.91px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-base font-medium font-['Geologica']">5.4K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[2.94px]">
+                <div data-variant="Like" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-5 left-[2.26px] top-[2.43px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-base font-medium font-['Geologica']">134</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[443.21px] top-[108.16px] absolute origin-top-left rotate-[-20.81deg] bg-white/50 rounded-[19.70px] shadow-[0.6565947532653809px_0.6565947532653809px_9.848920822143555px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="size-64 bg-slate-400/50"></div>
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-7 relative">
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-7 left-[-0.17px] top-[0.06px] absolute bg-fuchsia-600"></div>
+                <img class="size-7 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">Tsidos [T1SbO]</div>
+            </div>
+            <div class="self-stretch h-24 justify-start text-black text-lg font-medium font-['Geologica']">[МИНИ-UPD] Спаси брейнрота...</div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-4 left-[1.93px] top-[3.36px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">17.5K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-5 left-[2.31px] top-[2.62px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">228</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[668.35px] top-[26.63px] absolute origin-top-left rotate-[-10.69deg] bg-white/50 rounded-[19.68px] shadow-[0.655961275100708px_0.655961275100708px_9.8394193649292px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="size-56 bg-slate-400/50"></div>
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-6 relative">
+                <img class="size-6 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-6 left-[-0.16px] top-[0.03px] absolute bg-green-500"></div>
+                <img class="size-6 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-6 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">HerryLayes</div>
+            </div>
+            <div class="self-stretch h-20 justify-start text-black text-lg font-medium font-['Geologica']">Бургер Симулятор</div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-4 left-[1.41px] top-[3.37px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">19.7K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-4 left-[2.01px] top-[2.44px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">380</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[904.13px] top-[-14.06px] absolute origin-top-left rotate-[-0.56deg] bg-white/50 rounded-[19.70px] shadow-[0.6565947532653809px_0.6565947532653809px_9.848920822143555px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="size-48 bg-slate-400/50"></div>
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-5 relative">
+                <img class="size-5 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-5 left-[-0.18px] top-0 absolute bg-fuchsia-600"></div>
+                <img class="size-5 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-5 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">D PLAY ;3  </div>
+            </div>
+            <div class="self-stretch h-12 justify-start text-black text-lg font-medium font-['Geologica']">Bendy and the Ink Machine Chapter 2  </div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-5 relative overflow-hidden">
+                  <div class="size-5 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-3 left-[0.85px] top-[3.29px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">2.5K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-5 relative overflow-hidden">
+                  <div class="size-5 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-4 left-[1.66px] top-[2.19px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">115</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[1144.22px] top-[-12.58px] absolute origin-top-left rotate-[9.79deg] bg-white/50 rounded-[19.70px] shadow-[0.6565947532653809px_0.6565947532653809px_9.848920822143555px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="size-56 bg-slate-400/50"></div>
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-6 relative">
+                <img class="size-6 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-6 left-[-0.17px] top-[-0.03px] absolute bg-yellow-400"></div>
+                <img class="size-6 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-6 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">Roman_5200 Dragon...  </div>
+            </div>
+            <div class="self-stretch h-20 justify-start text-black text-lg font-medium font-['Geologica']">SABVEY CAT 2  </div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-4 left-[1.51px] top-[3.37px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">7.4K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-4 left-[2.04px] top-[2.42px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">146</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[1379.57px] top-[31.63px] absolute origin-top-left rotate-[19.91deg] bg-white/50 rounded-[19.70px] shadow-[0.6565947532653809px_0.6565947532653809px_9.848920822143555px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="size-64 bg-slate-400/50"></div>
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-7 relative">
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-7 left-[-0.17px] top-[-0.06px] absolute bg-green-500"></div>
+                <img class="size-7 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">koti████ВРАГ ВСЕХ ...                 </div>
+            </div>
+            <div class="self-stretch h-24 justify-start text-black text-lg font-medium font-['Geologica']">bloxel awards 2026 (ba 2026)</div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-5 h-4 left-[2.17px] top-[3.37px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">6.7K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-6 relative overflow-hidden">
+                  <div class="size-6 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-5 left-[2.38px] top-[2.60px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">137</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[1603.43px] top-[116.75px] absolute origin-top-left rotate-[30.04deg] bg-white/50 rounded-[19.70px] shadow-[0.6565947532653809px_0.6565947532653809px_9.848920822143555px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="size-64 bg-slate-400/50"></div>
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-7 relative">
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-7 left-[-0.15px] top-[-0.09px] absolute bg-cyan-400"></div>
+                <img class="size-7 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">GGlazStudio</div>
+            </div>
+            <div class="self-stretch h-32 justify-start text-black text-lg font-medium font-['Geologica']">Вырасти сад 0.2</div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-7 relative overflow-hidden">
+                  <div class="size-7 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-5 left-[2.76px] top-[3.25px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">23.6K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-7 relative overflow-hidden">
+                  <div class="size-7 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-5 left-[2.65px] top-[2.70px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">362</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size- left-[1809.32px] top-[240.19px] absolute origin-top-left rotate-[40.38deg] bg-white/50 rounded-[19.70px] shadow-[0.6565947532653809px_0.6565947532653809px_9.848920822143555px_0px_rgba(151,122,189,0.25)] backdrop-blur-xl inline-flex flex-col justify-start items-start overflow-hidden">
+          <img class="size-72" src="assets/images/bloxels-image-02-512x512.png" />
+          <div class="self-stretch px-3 py-2 flex flex-col justify-start items-start">
+            <div class="self-stretch inline-flex justify-start items-center gap-0.5">
+              <div class="size-7 relative">
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+                <div class="size-7 left-[-0.13px] top-[-0.11px] absolute bg-yellow-400"></div>
+                <img class="size-7 left-0 top-0 absolute opacity-50" src="assets/images/bloxels-image-02-512x512.png" />
+                <img class="size-7 left-0 top-0 absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              </div>
+              <div class="flex-1 justify-start text-zinc-500 text-sm font-medium font-['Geologica'] line-clamp-1">VIAN</div>
+            </div>
+            <div class="self-stretch h-36 justify-start text-black text-lg font-medium font-['Geologica']">Grow a Farm[БАБОЧКИ]</div>
+            <div class="self-stretch inline-flex justify-between items-center">
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Show" class="size-7 relative overflow-hidden">
+                  <div class="size-7 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-5 left-[3.28px] top-[3.03px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">12.7K</div>
+              </div>
+              <div class="size- flex justify-center items-center gap-[3.28px]">
+                <div data-variant="Like" class="size-7 relative overflow-hidden">
+                  <div class="size-7 left-0 top-0 absolute overflow-hidden">
+                    <div class="size-6 left-[2.85px] top-[2.72px] absolute bg-zinc-400"></div>
+                  </div>
+                </div>
+                <div class="justify-start text-zinc-400 text-lg font-medium font-['Geologica']">244</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="size-[860px] left-[-630px] top-[216px] absolute bg-radial from-violet-50 to-violet-50 rounded-full blur-3xl"></div>
+      <div class="size-[860px] left-[1210px] top-[216px] absolute bg-radial from-violet-50 to-violet-50 rounded-full blur-3xl"></div>
+      <div class="self-stretch flex flex-col justify-center items-center gap-3">
+        <div class="size- inline-flex justify-start items-center gap-3">
+          <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+            <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">04</div>
+          </div>
+          <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">проекты</div>
+        </div>
+        <div class="text-center justify-start"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Проекты </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">наших<br/>учеников</span></div>
+      </div>
+    </div>
+    <div class="w-full max-w-[1440px] min-h-[860px] px-14 py-20 relative flex flex-col justify-center items-center gap-14">
+      <div class="w-32 h-20 left-[123.78px] top-[354.09px] absolute origin-top-left rotate-180">
+        <div class="w-16 h-14 left-[50.30px] top-[15.13px] absolute origin-top-left rotate-[-14.21deg] opacity-60 bg-gradient-to-br from-fuchsia-600 to-violet-600 rounded-2xl shadow-[0px_0px_30px_0px_rgba(201,61,214,0.50)]"></div>
+        <div class="w-16 h-14 left-[37.81px] top-[17.18px] absolute origin-top-left rotate-[27.65deg] bg-gradient-to-br from-fuchsia-600 to-violet-600 rounded-2xl shadow-[0px_0px_30px_0px_rgba(201,61,214,0.50)]"></div>
+      </div>
+      <div class="self-stretch inline-flex justify-start items-start gap-2.5">
+        <div class="flex-1 inline-flex flex-col justify-start items-start gap-5">
+          <div class="size- inline-flex justify-start items-center gap-3">
+            <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+              <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">05</div>
+            </div>
+            <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Профессии будущего</div>
+          </div>
+          <div class="justify-start"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Блоксели — </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">первый шаг<br/></span><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">к профессиям будущего</span></div>
+        </div>
+      </div>
+      <img class="w-[505px] h-96 left-[1380px] top-[611.40px] absolute origin-top-left rotate-180" src="assets/images/bloxels-image-05-906x695.png" />
+      <div class="w-[1320px] flex-1 rounded-[48px] inline-flex flex-col justify-start items-start">
+        <div class="self-stretch px-7 py-9 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start gap-3">
+          <div class="w-9 h-12 pb-4 flex flex-col justify-start items-start">
+            <div data-variant="Code" class="size-9 relative overflow-hidden">
+              <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                <div class="w-8 h-6 left-[2.10px] top-[5.92px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch justify-center text-pink-400 text-xs font-medium font-['Geologica'] tracking-wide">01 — Программирование</div>
+          <div class="self-stretch justify-start text-gray-700 text-xl font-semibold font-['Geologica']">IT и разработка</div>
+          <div class="self-stretch justify-center text-slate-400 text-base font-normal font-['Geologica']">Программист, AI-разработчик,<br/>разработчик приложений</div>
+        </div>
+        <div class="self-stretch px-7 py-9 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start gap-3">
+          <div class="w-9 h-12 pb-4 flex flex-col justify-start items-start">
+            <div data-variant="Palette" class="size-9 relative overflow-hidden">
+              <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                <div class="size-7 left-[3px] top-[3px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch justify-center text-pink-400 text-xs font-medium font-['Geologica'] tracking-wide">02 — Творчество</div>
+          <div class="self-stretch justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Цифровой дизайн</div>
+          <div class="self-stretch justify-center text-slate-400 text-base font-normal font-['Geologica']">3D-дизайнер, UX/UI-дизайнер,<br/>дизайнер виртуальных миров</div>
+        </div>
+        <div class="self-stretch px-7 py-9 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start gap-3">
+          <div class="w-9 h-12 pb-4 flex flex-col justify-start items-start">
+            <div data-variant="Logic" class="size-9 relative overflow-hidden">
+              <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                <div class="size-7 left-[4.50px] top-[3px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch justify-center text-pink-400 text-xs font-medium font-['Geologica'] tracking-wide">03 — Логика</div>
+          <div class="self-stretch justify-start text-gray-700 text-xl font-semibold font-['Geologica']">Инженерия и архитектура</div>
+          <div class="self-stretch justify-center text-slate-400 text-base font-normal font-['Geologica']">Архитектор, инженер-проектировщик, специалист VR/AR<br/></div>
+        </div>
+        <div class="self-stretch px-7 py-9 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start gap-3">
+          <div class="w-9 h-12 pb-4 flex flex-col justify-start items-start">
+            <div data-variant="Science" class="size-9 relative overflow-hidden">
+              <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                <div class="size-7 left-[4.46px] top-[4.50px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch justify-center text-pink-400 text-xs font-medium font-['Geologica'] tracking-wide">04 — Наука</div>
+          <div class="self-stretch justify-start text-gray-700 text-xl font-semibold font-['Geologica']">Наука и исследования</div>
+          <div class="self-stretch justify-center text-slate-400 text-base font-normal font-['Geologica']">Специалист по медицинской визуализации, биоинформатик, разработчик цифровых моделей</div>
+        </div>
+        <div class="self-stretch px-7 py-9 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start gap-3">
+          <div class="w-9 h-12 pb-4 flex flex-col justify-start items-start">
+            <div data-variant="Games" class="size-9 relative overflow-hidden">
+              <div class="size-9 left-0 top-0 absolute overflow-hidden">
+                <div class="w-8 h-6 left-[1.58px] top-[6px] absolute bg-linear-81 from-pink-400 to-violet-500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch justify-center text-pink-400 text-xs font-medium font-['Geologica'] tracking-wide">05 — Игры</div>
+          <div class="self-stretch justify-start text-gray-700 text-xl font-semibold font-['Geologica']">Разработка игр</div>
+          <div class="self-stretch justify-center text-slate-400 text-base font-normal font-['Geologica']">Геймдизайнер, разработчик игр, левел-дизайнер<br/></div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full max-w-[1440px] px-14 py-20 inline-flex justify-start items-start gap-5">
+      <div class="w-96 self-stretch flex justify-start items-center gap-2.5">
+        <div class="flex-1 inline-flex flex-col justify-start items-start gap-5">
+          <div class="size- inline-flex justify-start items-center gap-3">
+            <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+              <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">06</div>
+            </div>
+            <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">УЧИМ</div>
+          </div>
+          <div class="self-stretch justify-start"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Блоксели<br/>раскрывает </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">таланты</span></div>
+        </div>
+      </div>
+      <div class="flex-1 inline-flex flex-col justify-start items-start">
+        <div class="size-lf-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-start gap-6">
+          <div class="flex-1 inline-flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch justify-center text-gray-700 text-xl font-semibold font-['Geologica']">Открывает мир разработки игр</div>
+            <div class="self-stretch justify-center text-violet-300 text-base font-normal font-['Geologica']">Дети придумывают механики, строят уровни и программируют персонажей — всё как у настоящих разработчиков.</div>
+          </div>
+          <div class="size-12 relative">
+            <div class="w-32 h-2 left-[-59.98px] top-[52px] absolute origin-top-left rotate-[13deg] bg-linear-201 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="size-36 left-[66.07px] top-[118.55px] absolute origin-top-left rotate-[-162deg]" src="assets/images/bloxels-image-12-1480x1040.png" />
+          </div>
+        </div>
+        <div class="size-lf-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-start gap-6">
+          <div class="flex-1 inline-flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch justify-center text-gray-700 text-xl font-semibold font-['Geologica']">Учит<br/>программировать</div>
+            <div class="self-stretch justify-center text-violet-300 text-base font-normal font-['Geologica']">От визуальных блоков до Python — шаг за шагом, без стресса и скуки.<br/></div>
+          </div>
+          <div class="size-12 relative">
+            <div class="w-20 h-2 left-[-29px] top-[80.06px] absolute origin-top-left rotate-[-5deg] bg-linear-346 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="size-36 left-[-83.52px] top-[-6.97px] absolute origin-top-left rotate-[-28deg]" src="assets/images/bloxels-image-12-1480x1040.png" />
+          </div>
+        </div>
+        <div class="size-lf-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-start gap-6">
+          <div class="flex-1 inline-flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch justify-center text-gray-700 text-xl font-semibold font-['Geologica']">Проводит хакатоны и конкурсы</div>
+            <div class="self-stretch justify-center text-violet-300 text-base font-normal font-['Geologica']">Дети работают в командах, презентуют идеи и выигрывают призы.<br/></div>
+          </div>
+          <div class="size-12 relative">
+            <div class="w-14 h-2 left-[37.59px] top-[87.68px] absolute origin-top-left rotate-[-169deg] bg-linear-321 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="size-36 left-[-49.94px] top-[-50.37px] absolute" src="assets/images/bloxels-image-12-1480x1040.png" />
+          </div>
+        </div>
+        <div class="size-lf-stretch p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-start gap-6">
+          <div class="flex-1 inline-flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch justify-center text-gray-700 text-xl font-semibold font-['Geologica']">Превращает<br/>хобби в профессию</div>
+            <div class="self-stretch justify-center text-violet-300 text-base font-normal font-['Geologica']">«Программирование, геймдев, 3D-дизайн — профессии будущего, путь к которым начинается с игры.»</div>
+          </div>
+          <div class="size-12 relative">
+            <div class="w-14 h-2 left-[-47.67px] top-[50px] absolute origin-top-left rotate-[15deg] bg-linear-321 from-black/50 to-black/0 rounded-full blur-[2.95px]"></div>
+            <img class="size-36 left-[-42.92px] top-[-62.84px] absolute origin-top-left rotate-[10deg]" src="assets/images/bloxels-image-12-1480x1040.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-[1440px] max-w-[1440px] min-h-[860px] px-14 py-20 relative flex flex-col justify-center items-center gap-14">
+      <img class="size-96 left-[1405.32px] top-[490.80px] absolute origin-top-left rotate-[-170.57deg]" src="assets/images/bloxels-image-04-1024x943.png" />
+      <div class="self-stretch flex flex-col justify-center items-center gap-5">
+        <div class="size- flex flex-col justify-start items-start gap-5">
+          <div class="size- inline-flex justify-start items-center gap-3">
+            <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+              <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">07</div>
+            </div>
+            <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">МЫ сотрудничаем</div>
+          </div>
+        </div>
+        <div class="text-center justify-center"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Наши </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">партнеры</span></div>
+      </div>
+      <div class="self-stretch inline-flex justify-center items-center gap-5 flex-wrap content-center">
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-24 bg-zinc-500"></div>
+        </div>
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-11 bg-zinc-500"></div>
+        </div>
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-20 bg-zinc-500"></div>
+        </div>
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-6 bg-zinc-500"></div>
+        </div>
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-10 bg-neutral-400"></div>
+        </div>
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-10 bg-zinc-500"></div>
+        </div>
+        <div class="w-60 h-36 px-6 py-9 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="size-20 bg-neutral-600"></div>
+        </div>
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-7 bg-zinc-500"></div>
+        </div>
+        <div class="w-60 h-36 p-6 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-center items-center">
+          <div class="w-48 h-9 bg-neutral-600"></div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full max-w-[1440px] min-h-[860px] px-14 py-20 relative flex flex-col justify-center items-center gap-14">
+      <div class="size-52 left-[1482.18px] top-[846.73px] absolute origin-top-left rotate-[118deg] bg-gradient-to-br from-fuchsia-600/50 to-violet-600/40 rounded-xl shadow-[0px_0px_40px_0px_rgba(201,61,214,0.50)]"></div>
+      <div class="self-stretch flex flex-col justify-start items-start gap-5">
+        <div class="self-stretch inline-flex justify-start items-center gap-3">
+          <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+            <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">08</div>
+          </div>
+          <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Опыт</div>
+        </div>
+        <div class="justify-start"><span class="text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Внедрено в </span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">50+ госшкол</span></div>
+      </div>
+      <div class="self-stretch inline-flex justify-start items-start gap-5">
+        <div class="flex-1 self-stretch flex justify-start items-center">
+          <img class="w-80 h-[492.40px]" src="assets/images/bloxels-image-07-618x988.png" />
+          <div class="flex-1 bg-white/50 rounded-3xl shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start overflow-hidden">
+            <div class="self-stretch h-20 relative">
+              <div class="w-[1068px] h-10 left-[-0.63px] top-[-0.25px] absolute bg-slate-400/50 shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px]"></div>
+              <div class="w-12 h-3 left-[20px] top-[16px] absolute">
+                <div class="size-3 left-0 top-0 absolute bg-red-400 shadow-[inset_0px_0px_6px_0px_rgba(236,109,98,1.00)] border-[0.50px] border-red-500"></div>
+                <div class="size-3 left-[20px] top-0 absolute bg-amber-300 shadow-[inset_0px_0px_6px_0px_rgba(245,196,81,1.00)] border-[0.50px] border-orange-400"></div>
+                <div class="size-3 left-[40px] top-0 absolute bg-green-400 shadow-[inset_0px_0px_6px_0px_rgba(104,204,88,1.00)] border-[0.50px] border-lime-600"></div>
+              </div>
+              <div class="size- left-[77px] top-[8px] absolute inline-flex justify-start items-center gap-2">
+                <div class="w-64 flex justify-start items-start gap-2.5">
+                  <div class="w-44 h-5 bg-gradient-to-l from-black/0 to-black to 10%"></div>
+                  <div class="justify-center text-zinc-700 text-xs font-normal font-['SF_Pro_Text']">РАСШИРЕНИЕ БЛОКСЕЛЕЙ</div>
+                  <div class="size-2 bg-white"></div>
+                  <div data-color="Default" data-style="Icon" class="size-4 relative">
+                    <div class="size-4 left-0 top-0 absolute bg-white"></div>
+                  </div>
+                </div>
+                <div class="size-3 bg-stone-300"></div>
+              </div>
+              <div class="w-[1068px] h-9 left-0 top-[42px] absolute bg-white"></div>
+              <div class="w-[1068px] h-[0.50px] left-0 top-[78.50px] absolute bg-zinc-400"></div>
+              <div class="size-3 left-[15.50px] top-[53.59px] absolute bg-zinc-600"></div>
+              <div class="size-3 left-[60.50px] top-[65.88px] absolute origin-top-left rotate-180 bg-stone-300"></div>
+              <div class="w-3.5 h-3 left-[79.50px] top-[53.50px] absolute bg-zinc-600"></div>
+              <div class="w-[916px] h-7 left-[108px] top-[46px] absolute bg-gray-100 rounded-2xl"></div>
+              <div class="w-2 h-2.5 left-[122px] top-[55px] absolute bg-zinc-600"></div>
+              <div class="w-[816px] h-7 left-[142px] top-[46px] absolute justify-center"><span class="text-neutral-500 text-sm font-normal font-['Inter']">https://</span><span class="text-neutral-800 text-sm font-normal font-['Inter']">bloxels.ru/expand</span></div>
+              <div class="w-[3px] h-3 left-[1044.50px] top-[53.60px] absolute bg-zinc-600"></div>
+              <div class="w-16 h-12 left-[74px] top-[2px] absolute"></div>
+            </div>
+            <div class="self-stretch p-6 relative rounded-3xl flex flex-col justify-center items-start overflow-hidden">
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-1 h-2 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-3 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3 h-2.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-3 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-3 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-2.5 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-2 h-1.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-[5.08px] h-1 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-2 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-3 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-32 h-40 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-11 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-12 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-16 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-20 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-11 h-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-10 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-10 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-8 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-14 h-11 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-20 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-64 h-52 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-2.5 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-14 h-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-28 h-20 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-3.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-2 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-10 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-36 h-20 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-14 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-[2.85px] h-1 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-3.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3 h-2 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-10 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-10 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-8 h-11 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-8 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-14 h-12 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-10 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-8 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-3.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-[5.20px] h-1 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-10 h-16 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-20 h-11 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-24 h-32 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-32 h-44 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-12 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-20 h-14 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-14 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-40 h-96 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-16 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-24 h-20 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-14 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-14 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-16 h-11 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-14 h-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-11 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-12 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-9 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-14 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-24 h-14 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-16 h-20 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-16 h-24 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-36 h-32 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-36 h-28 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-64 h-72 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-28 h-36 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-32 h-24 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-11 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-24 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-32 h-36 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-24 h-32 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-32 h-48 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-1 h-1.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-2.5 h-3.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-3.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-1 h-[4.71px] bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-8 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-10 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-2.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-12 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-9 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-8 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-14 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-3.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-2.5 h-3 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-8 h-12 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-24 h-52 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-12 h-28 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3 h-2 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-1.5 h-2.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-2.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-8 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-3.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-2.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-10 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-2 h-3 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-4 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-0.5 h-1 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-7 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-2.5 h-2 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-4 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3 h-5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-2.5 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-3.5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-5 h-6 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="w-6 h-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size-7 bg-white outline outline-[0.50px] outline-offset-[-0.25px] outline-slate-400"></div>
+              <div class="size- px-3 py-1.5 bg-white rounded-[100px] outline outline-1 outline-offset-[-1px] outline-violet-500/20 inline-flex justify-center items-center gap-2.5">
+                <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] tracking-wide">Карта России с флажками школ</div>
+              </div>
+              <img class="size-5 left-[109.53px] top-[166.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              <img class="size-5 left-[182.53px] top-[182.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              <img class="size-5 left-[105.53px] top-[213.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              <img class="size-5 left-[121.53px] top-[112.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              <img class="size-5 left-[257.53px] top-[214.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              <img class="size-5 left-[304.53px] top-[267.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              <img class="size-5 left-[445.53px] top-[191.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+              <img class="size-5 left-[508.53px] top-[280.11px] absolute" src="assets/images/bloxels-image-02-512x512.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full max-w-[1440px] min-h-[860px] px-14 py-20 relative flex flex-col justify-center items-center gap-14">
+      <div class="w-44 h-40 left-[644.35px] top-[347.31px] absolute origin-top-left rotate-180">
+        <div class="size-24 left-[43.02px] top-[85.41px] absolute origin-top-left rotate-[-38deg] bg-gradient-to-br from-pink-400 to-fuchsia-600 rounded-2xl shadow-[0px_0px_40px_0px_rgba(255,122,184,0.55)]"></div>
+        <div class="size-24 left-[30.78px] top-0 absolute origin-top-left rotate-[20deg] opacity-60 bg-gradient-to-br from-pink-400 to-fuchsia-600 rounded-2xl shadow-[0px_0px_40px_0px_rgba(255,122,184,0.55)]"></div>
+      </div>
+      <div class="self-stretch flex flex-col justify-start items-start gap-5">
+        <div class="self-stretch inline-flex justify-start items-center gap-3">
+          <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+            <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">09</div>
+          </div>
+          <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">МЫ пишем</div>
+        </div>
+        <div class="justify-start text-slate-900 text-6xl font-bold font-['Geologica'] leading-[64px]">Новости</div>
+      </div>
+      <div class="self-stretch h-[542px] inline-flex flex-col justify-start items-start">
+        <div class="self-stretch h-[542px] bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start overflow-hidden">
+          <div class="self-stretch h-72 relative bg-gradient-to-br from-pink-400/40 to-violet-500/40 overflow-hidden">
+            <div class="w-[514px] h-[642.50px] left-0 top-[-176.77px] absolute bg-slate-400/50"></div>
+            <div class="w-20 h-6 left-[16px] top-[16px] absolute bg-white rounded-full">
+              <div class="left-[12px] top-[5px] absolute justify-start text-pink-400 text-xs font-bold font-['Inter'] leading-4">ГЛАВНОЕ</div>
+            </div>
+          </div>
+          <div class="self-stretch flex-1 p-6 flex flex-col justify-between items-end">
+            <div class="self-stretch flex flex-col justify-start items-start gap-3">
+              <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">14.05.2026</div>
+              <div class="self-stretch justify-start text-slate-900 text-4xl font-bold font-['Geologica'] leading-10">Премия «Блоксели 2026»: как прошел первый конкурс на платформе</div>
+            </div>
+            <div class="justify-start text-pink-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Читать →</div>
+          </div>
+        </div>
+        <div class="size-lf-stretch bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-start overflow-hidden">
+          <div class="w-40 self-stretch relative bg-gradient-to-br from-pink-400/20 to-violet-500/20 overflow-hidden">
+            <div class="w-64 h-40 left-0 top-[0.23px] absolute bg-slate-400/50"></div>
+          </div>
+          <div class="flex-1 self-stretch px-6 py-4 inline-flex flex-col justify-between items-start">
+            <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">23.06.2026</div>
+            <div class="self-stretch h-14 justify-start text-slate-900 text-xl font-semibold font-['Geologica']">Блоксели стали партнёрами Олимпиады «Невский интеграл»</div>
+            <div class="justify-start text-pink-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Читать →</div>
+          </div>
+        </div>
+        <div class="size-lf-stretch bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-start overflow-hidden">
+          <div class="w-40 self-stretch relative bg-gradient-to-br from-pink-400/20 to-violet-500/20 overflow-hidden">
+            <div class="w-64 h-40 left-0 top-[0.90px] absolute bg-slate-400/50"></div>
+          </div>
+          <div class="flex-1 self-stretch px-6 py-4 inline-flex flex-col justify-between items-start">
+            <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">31.03.2026</div>
+            <div class="self-stretch h-14 justify-start text-slate-900 text-xl font-semibold font-['Geologica']">«Блоксели» в профессиональном диалоге о будущем инженерного образования 👩‍🎓</div>
+            <div class="justify-start text-pink-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Читать →</div>
+          </div>
+        </div>
+        <div class="size-lf-stretch bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex justify-start items-start overflow-hidden">
+          <div class="w-40 self-stretch relative bg-gradient-to-br from-pink-400/20 to-violet-500/20 overflow-hidden">
+            <div class="w-64 h-40 left-[-41px] top-[0.57px] absolute bg-slate-400/50"></div>
+          </div>
+          <div class="flex-1 self-stretch px-6 py-4 inline-flex flex-col justify-between items-start">
+            <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">04.03.2026</div>
+            <div class="self-stretch h-14 justify-start text-slate-900 text-xl font-semibold font-['Geologica']">«Блоксели» пригласили в Общественную палату: почему государство обсуждает игровые технологии с разработчиками?</div>
+            <div class="justify-start text-pink-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Читать →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full max-w-[1440px] px-14 py-20 flex flex-col justify-center items-center gap-2.5">
+      <div class="self-stretch pt-14 bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] flex flex-col justify-start items-center overflow-hidden">
+        <div class="self-stretch px-14 flex flex-col justify-start items-center gap-12">
+          <div class="size- flex flex-col justify-start items-center gap-6">
+            <div class="text-center justify-start"><span class="text-black text-6xl font-bold font-['Geologica'] leading-[64px]">Будьте в курсе<br/></span><span class="text-pink-400 text-6xl font-bold font-['Geologica'] leading-[64px]">обновлений</span></div>
+            <div class="text-center justify-start text-slate-400 text-base font-normal font-['Geologica']">Узнавайте первыми о конкурсах, кейсах и новостях платформы!</div>
+          </div>
+          <div class="size- inline-flex justify-center items-start gap-3">
+            <div class="w-64 px-5 py-3.5 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-violet-500/20 inline-flex flex-col justify-center items-start overflow-hidden">
+              <div class="self-stretch justify-start text-slate-900/50 text-base font-normal font-['Geologica']">email@example.com</div>
+            </div>
+            <div data-content="Label" data-fill="Fill" data-variant="Primary" class="size- min-w-52 px-9 py-3.5 bg-linear-81 from-pink-400 to-violet-500 rounded-xl shadow-[0px_0px_4px_-8px_rgba(255,255,255,0.25)] shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.15)] flex justify-center items-center gap-2.5">
+              <div class="text-center justify-start text-stone-50 text-sm font-medium font-['Geologica']">ПОДПИСАТЬСЯ →</div>
+            </div>
+          </div>
+        </div>
+        <div class="self-stretch h-[460px] relative">
+          <img class="w-[1320px] h-[742.89px] left-0 top-[-245px] absolute" src="assets/images/bloxels-image-10-1672x941.png" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full max-w-[1440px] px-14 py-20 relative inline-flex justify-center items-center gap-5">
+      <div class="w-32 h-20 left-[524px] top-[37px] absolute">
+        <div class="w-16 h-14 left-0 top-[15.13px] absolute origin-top-left rotate-[-14.21deg] opacity-60 bg-gradient-to-br from-fuchsia-600 to-violet-600 rounded-2xl shadow-[0px_0px_30px_0px_rgba(201,61,214,0.50)]"></div>
+        <div class="w-16 h-14 left-[54.03px] top-[17.18px] absolute origin-top-left rotate-[27.65deg] bg-gradient-to-br from-fuchsia-600 to-violet-600 rounded-2xl shadow-[0px_0px_30px_0px_rgba(201,61,214,0.50)]"></div>
+      </div>
+      <div class="flex-1 h-[500px] p-9 bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-between items-start">
+        <div class="self-stretch inline-flex justify-start items-center gap-3">
+          <div class="size- px-3 py-[5px] bg-linear-81 from-pink-400 to-violet-500 rounded-full flex justify-center items-center gap-2.5">
+            <div class="justify-start text-white text-xs font-medium font-['Geologica'] tracking-wide">10</div>
+          </div>
+          <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Заявка</div>
+        </div>
+        <div class="self-stretch flex flex-col justify-start items-start gap-6">
+          <div class="self-stretch justify-start"><span class="text-slate-900 text-4xl font-bold font-['Geologica'] leading-10">Появились </span><span class="text-pink-400 text-4xl font-bold font-['Geologica'] leading-10">вопросы?<br/></span><span class="text-slate-900 text-4xl font-bold font-['Geologica'] leading-10">Мы с вами </span><span class="text-pink-400 text-4xl font-bold font-['Geologica'] leading-10">свяжемся!</span></div>
+          <div class="self-stretch justify-start text-slate-400 text-base font-normal font-['Geologica']">Заполните форму, и наш менеджер свяжется с вами в ближайшее время.</div>
+        </div>
+      </div>
+      <div class="w-[762px] h-[500px] p-9 rounded-3xl inline-flex flex-col justify-between items-start">
+        <div class="self-stretch flex flex-col justify-start items-start gap-5">
+          <div class="self-stretch justify-start text-black text-xl font-semibold font-['Geologica']">Заполните форму, и наш менеджер<br/>свяжется с вами в ближайшее время.</div>
+          <div class="self-stretch inline-flex flex-col justify-start items-start">
+            <div class="self-stretch px-5 py-3.5 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-violet-500/20 inline-flex flex-col justify-center items-start overflow-hidden">
+              <div class="self-stretch justify-start text-slate-900/50 text-base font-normal font-['Geologica']">ФИО *</div>
+            </div>
+            <div class="self-stretch px-5 py-3.5 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-violet-500/20 inline-flex flex-col justify-center items-start overflow-hidden">
+              <div class="self-stretch justify-start text-slate-900/50 text-base font-normal font-['Geologica']">Email *</div>
+            </div>
+            <div class="self-stretch px-5 py-3.5 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-violet-500/20 inline-flex flex-col justify-center items-start overflow-hidden">
+              <div class="self-stretch justify-start text-slate-900/50 text-base font-normal font-['Geologica']">Номер телефона *</div>
+            </div>
+            <div class="self-stretch px-5 py-3.5 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-violet-500/20 inline-flex flex-col justify-center items-start overflow-hidden">
+              <div class="self-stretch justify-start text-slate-900/50 text-base font-normal font-['Geologica']">Образовательное учреждение *</div>
+            </div>
+          </div>
+          <div class="self-stretch px-5 py-3.5 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-violet-500/20 inline-flex justify-between items-center overflow-hidden">
+            <div class="justify-start text-slate-900/50 text-base font-normal font-['Geologica']">Выберите роль *</div>
+            <div class="justify-start text-slate-900/40 text-sm font-normal font-['Inter'] leading-5">▾</div>
+          </div>
+        </div>
+        <div class="self-stretch flex flex-col justify-start items-start gap-6">
+          <div class="self-stretch inline-flex justify-start items-center gap-5">
+            <div data-content="Label" data-fill="Fill" data-variant="Primary" class="size- min-w-52 px-9 py-3.5 bg-linear-81 from-pink-400 to-violet-500 rounded-xl shadow-[0px_0px_4px_-8px_rgba(255,255,255,0.25)] shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.15)] flex justify-center items-center gap-2.5">
+              <div class="text-center justify-start text-stone-50 text-sm font-medium font-['Geologica']">Отправить заявку →</div>
+            </div>
+            <div class="flex-1 justify-start"><span class="text-slate-400 text-xs font-medium font-['Geologica'] tracking-wide">Нажимая на кнопку, вы соглашаетесь на </span><span class="text-slate-400 text-xs font-medium font-['Geologica'] underline tracking-wide">обработку персональных данных</span><span class="text-slate-400 text-xs font-medium font-['Geologica'] tracking-wide">.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-source="Landing" data-theme="Light" class="w-[1440px] max-w-[1440px] px-14 flex flex-col justify-center items-center gap-14">
+    <div class="self-stretch inline-flex justify-start items-center gap-5">
+      <div class="w-96 self-stretch p-9 bg-linear-81 from-pink-400 to-violet-500 rounded-[48px] inline-flex flex-col justify-between items-start overflow-hidden">
+        <div data-color="Black" data-style="With label" class="w-36 h-9 relative">
+          <div class="w-36 h-9 left-0 top-0 absolute bg-white"></div>
+        </div>
+        <div class="justify-start text-white text-xs font-medium font-['Geologica'] uppercase tracking-wide">© Блоксели, 2026<br/>Все права защищены.</div>
+      </div>
+      <div class="flex-1 p-9 bg-white/50 rounded-[48px] shadow-[2px_2px_30px_0px_rgba(151,122,189,0.25)] backdrop-blur-[79.80px] inline-flex flex-col justify-start items-start overflow-hidden">
+        <div class="self-stretch inline-flex flex-col justify-start items-end gap-14">
+          <div class="w-40 h-9 bg-black"></div>
+          <div class="self-stretch flex flex-col justify-end items-end gap-6">
+            <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Следите за нами</div>
+            <div class="size- flex flex-col justify-start items-start gap-3">
+              <div class="size- inline-flex justify-center items-center gap-2.5">
+                <div class="w-5 h-3 bg-black"></div>
+                <div class="justify-start text-black text-base font-normal font-['Geologica']">Вконтакте</div>
+              </div>
+              <div class="size- inline-flex justify-center items-center gap-2.5">
+                <div class="w-5 h-4 bg-black"></div>
+                <div class="justify-start text-black text-base font-normal font-['Geologica']">Телеграм</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size-lf-stretch inline-flex flex-col justify-start items-start gap-6">
+          <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Навигация</div>
+          <div class="size- flex flex-col justify-start items-start gap-1.5">
+            <div class="justify-start text-black text-base font-normal font-['Geologica']">Школам</div>
+            <div class="justify-start text-black text-base font-normal font-['Geologica']">Родителям</div>
+            <div class="justify-start text-black text-base font-normal font-['Geologica']">Детям</div>
+          </div>
+        </div>
+        <div class="size-lf-stretch inline-flex flex-col justify-start items-start gap-6">
+          <div class="justify-start text-slate-400 text-xs font-medium font-['Geologica'] uppercase tracking-wide">Компания</div>
+          <div class="size- flex flex-col justify-start items-start gap-1.5">
+            <div class="justify-start text-black text-base font-normal font-['Geologica']">Новости</div>
+            <div class="justify-start text-black text-base font-normal font-['Geologica']">Вакансии</div>
+            <div class="justify-start text-black text-base font-normal font-['Geologica']">Контакты</div>
+          </div>
+        </div>
+        <div class="size-lf-stretch inline-flex justify-start items-start gap-5 flex-wrap content-start">
+          <div class="text-right justify-center text-black/50 text-base font-normal font-['Geologica']">Пользовательское соглашение</div>
+          <div class="text-right justify-center text-black/50 text-base font-normal font-['Geologica']">Политика конфиденциальности</div>
+          <div class="text-right justify-center text-black/50 text-base font-normal font-['Geologica']">Оферта</div>
+          <div class="text-right justify-center text-black/50 text-base font-normal font-['Geologica']">Информация о ПО</div>
+          <div class="text-right justify-center text-black/50 text-base font-normal font-['Geologica']">Согласие на обработку персональных данных</div>
+          <div class="text-right justify-center text-black/50 text-base font-normal font-['Geologica']">Политика обработки персональных данных</div>
+          <div class="text-right justify-center text-black/50 text-base font-normal font-['Geologica']">Лицензионное соглашение</div>
+        </div>
+      </div>
+    </div>
+    <div class="self-stretch h-40 bg-white"></div>
+  </div>
 </div>
 <script src="assets/scripts/app.js" defer></script>
-
-</body></html>
+</body>
+</html>

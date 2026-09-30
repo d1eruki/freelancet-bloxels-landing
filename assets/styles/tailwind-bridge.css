@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Geologica";
+  src: url("../fonts/geologica-main-cyrillic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geologica";
+  src: url("../fonts/geologica-alt-cyrillic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  min-width: 1440px;
+  background: #f7fbff;
+}
+
+body {
+  margin: 0;
+  min-width: 1440px;
+  font-family: "Geologica", Arial, sans-serif;
+  background: #f7fbff;
+}
+
+img {
+  max-width: none;
+}
+
+.landing-export {
+  margin: 0 auto;
+  background:
+    radial-gradient(circle at 70% 10%, rgba(56, 189, 248, 0.30) 0%, rgba(56, 189, 248, 0) 69%),
+    linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+}
+
+.size- {
+  width: fit-content;
+  height: fit-content;
+}
+
+.size-lf-stretch {
+  align-self: stretch;
+}
+
+.bg-linear-81 {
+  background-image: linear-gradient(81deg, #f472b6 0%, #8b5cf6 100%);
+}
+
+.bg-linear-228 {
+  background-image: linear-gradient(228deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-linear-211 {
+  background-image: linear-gradient(211deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-linear-201 {
+  background-image: linear-gradient(201deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-linear-346 {
+  background-image: linear-gradient(346deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-linear-321 {
+  background-image: linear-gradient(321deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
